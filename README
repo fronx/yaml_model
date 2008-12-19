@@ -1,13 +1,21 @@
 YamlModel
 =========
 
-Introduction goes here.
-
+Declare your own YAML-based models by inheriting from YamlModel::Base.
 
 Example
 =======
 
-Example goes here.
+class Book < YamlModel::Base
+  fields :title, :author, :content
+end
 
+Book.setup  # creates the data file RAILS_ROOT/data/book.yml
+Book.all    # returns all records from book.yml
+
+book = Book.first
+puts book.title
+puts book.author
+puts book.content
 
 Copyright (c) 2008 François Wurmus, released under the MIT license
