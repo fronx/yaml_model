@@ -18,4 +18,18 @@ puts book.title
 puts book.author
 puts book.content
 
+Data file format (example)
+==========================
+- 
+title: the book about some thing
+author: tim
+content: bla bli blub
+- 
+title: book with structured content
+author: fronx
+content:
+  chapter1: please read on in chapter 2.
+  chapter2: and now, move back to the top, please.
+
+
 Copyright (c) 2008 François Wurmus, released under the MIT license
